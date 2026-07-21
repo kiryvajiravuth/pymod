@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "pymod"
+version = "0.1.0"
+description = "Python Module Manager - lightweight dependency management"
+requires-python = ">=3.8"
+license = "MIT"
+dependencies = []
+
+[project.scripts]
+pymod = "pymod.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
